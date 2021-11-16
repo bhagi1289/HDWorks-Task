@@ -103,6 +103,6 @@ function shortestPath(source, target) {
   return Infinity; // Returns Infinity if Path is not Possible
 }
 
-var distance = shortestPath([0, 7, 0], [7, 0]);
+var distance = shortestPath([4, 5, 0], [1, 1]);
 
 console.log(`Minimum distance: ${distance}`);
