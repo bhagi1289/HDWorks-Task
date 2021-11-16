@@ -15,4 +15,4 @@ node shortestpath.js
 
 # How I considered the 8 X 8 Chess board with picture example.
 
-<img src="knight.jpg" alt="Chess board "/>
+<img src="knight.jpg" alt="Chess board " width="75%" height="75%"/>
