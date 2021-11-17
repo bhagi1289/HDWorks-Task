@@ -1,10 +1,14 @@
-function calculateFanFightWallet(discountPercentage) {
-  const initialEntryFee = 400; //Rs
+function calculateFanFightWallet(discountPercentage, entryFee, bonus, deposit, winnings) {
+
+  // I am assuming the values the given in the task PDF as default values.
+
+  const initialEntryFee = entryFee || 400; //Rs
   var fanFightWallet = {
-    bonusBucket: 60,
-    depositBucket: 100,
-    winningsBucket: 340,
+    bonusBucket: bonus || 60,
+    depositBucket: deposit || 100,
+    winningsBucket: winnings || 340,
     get total() {
+      // Getter to calculate the sum;
       return this.bonusBucket + this.depositBucket + this.winningsBucket;
     },
   };
